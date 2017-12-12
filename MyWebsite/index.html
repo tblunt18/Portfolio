@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <title>Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--Import Google Icon Font-->
+    <!--Import Google Icons & Fonts-->
     <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="CSS/materialize.css" media="screen,projection"/>
@@ -18,6 +20,23 @@
     <script type="text/javascript" src="JS/materialize.js"></script>
 
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <style>
+        .navbar-fixed
+        {
+            position: absolute;z-index:999999999;
+        }
+        .cirle2{
+            -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+        }
+        .pic{
+            height:300px;
+            width:300px;
+            position: absolute;
+            top: 130px;
+            right:450px;
+        }
+
+    </style>
 
 </head>
 <body>
@@ -33,225 +52,237 @@
 
             </ul>
         </div>
-        <div class="row ">
-            <div class="parallax-container " style="height:530px">
-                <div class="parallax">
-                    <img src="https://images.pexels.com/photos/34153/pexels-photo.jpg?w=940&h=650&auto=compress&cs=tinysrgb">
+        <div class="navbar-fixed">
+            <nav class="transparent nav-extended">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo"><img style="height:75px; width:120px" src="Images/mylogo1.svg"> </a>
 
+                    <div class="nav-content right">
+                        <ul class="tabs tabs-transparent">
+                            <li class="tab"><a class="active" onclick="home()" href="#test1">Home</a></li>
+                            <li class="tab"><a href="#resumemodal">Résumé</a></li>
+                            <li class="tab"><a  href="#test2" onclick="graphic()">Design</a></li>
+                            <li class="tab "><a href="#test3" onclick="webDev()">Projects</a></li>
+                            <li class="tab"><a onclick="photography()" >Photography</a></li>
+                            <li class="tab"><a href="#test5" onclick="videos()">Video</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <p class="item-1 sliding-text">“If I didn’t define myself for myself, I would be crunched into other people’s fantasies for me and eaten alive. ” – Audre Lorde</p>
+            </nav>
+            <div id="test1" class="col s12">
 
-                <p class="item-2 sliding-text">“If you don’t like something, change it. If you can’t change it, change your attitude.” – Maya Angelou</p>
+            </div>
+            <div id="test2" class="col s12">Test 2</div>
+            <div id="test3" class="col s12">Test 3</div>
+            <div id="" class="col s12">
 
-                <p class="item-3 sliding-text">"Where there is no struggle, there is no strength." – Oprah Winfrey</p>
-
-                <div class="typewriter">
-                    <h1>Takeria's Digital Portfolio</h1>
-                </div>
             </div>
 
-
         </div>
-
         <div class="row">
-            <div class="parallax-container " style="height:500px">
+            <div class="parallax-container ">
                 <div class="parallax">
-                    <img src="https://images.pexels.com/photos/162616/coffee-work-desk-mug-keyboard-162616.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb">
+                    <img src="https://images.pexels.com/photos/242236/pexels-photo-242236.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb">
                 </div>
-                <p class="section-headings center" style="position:relative;top:240px;font-size: 20px">Welcome! I'm Takeria Blunt and I enjoy working with various types of digital media. From Web Design to Photography <br>
-                and Videos, there's no area that I haven't experimented with. This is my digital portfolio, here you can view my resume and works. Thanks for visiting! </p>
+                <!--
+                <div class="row">
+                    <div class="name col s1 offset-s5 ">
+                        <p>Keria</p>
+                    </div>
+                </div>
+                -->
+                <div class="row">
+                    <div class="">
+                        <div class="typewriter">
+                            <h1>WELCOME</h1>
+                        </div>
+
+                        <!--
+                        <div style="position: relative; top:2px">
+                            <p  class="item-1 sliding-text">Tech Geek</p>
+
+                            <p class="item-2 sliding-text">Spelmanite</p>
+
+                            <p class="item-3 sliding-text">Creative</p>
+                        </div>
+                        -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s4 offset-s4">
+                        <div class="aboutme white-text">
+                            <p>I'm Takeria (Keria) Blunt, an undergraduate student, tech geek, and
+                                visual creator. My passions are digital media, UX/UI, data viz, and
+                                education. Enjoy!</p>
+                        </div>
+                    </div>
+
+                </div>
+                <!--
+                <div class="row">
+                    <a style="text-decoration: none;color: black" href="photos.html">
+                        <div class=" col s2 offset-s2">
+                            <div class="z-depth-5 boxes" style="background-color: white; border: thick solid black; height: 190px; width: 230px;position:relative; top:190px">
+                                <p class="" style="font-family: 'Allerta Stencil';position:relative; top:60px;left:50px">PHOTOGRAPHY</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a style="text-decoration: none;color: black" href="video.html">
+                        <div class=" col s2 ">
+                            <div class="z-depth-5" style="background-color: white; border: thick solid black; height: 190px; width: 230px;position:relative; top:190px">
+                                <p class="" style="font-family: 'Allerta Stencil';position:relative; top:60px;left:75px">VIDEOS</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a style="text-decoration: none;color: black" href="graphics.html">
+                        <div class=" col s2 ">
+                            <div class="z-depth-5" style="background-color: white; border: thick solid black; height: 190px; width: 230px;position:relative; top:190px">
+                                <p class="" style="font-family: 'Allerta Stencil';position:relative; top:60px;left:45px">GRAPHIC DESIGN</p>
+                            </div>
+                        </div>
+                    </a>
+                   <a style="text-decoration: none;color: black" href="web.html">
+                       <div class=" col s2 ">
+                           <div class="z-depth-5" style="background-color: white; border: thick solid black; height: 190px; width: 230px;position:relative; top:190px">
+                               <p class="" style="font-family: 'Allerta Stencil';position:relative; top:60px;left:60px">WEB DESIGN</p>
+                           </div>
+                       </div>
+                   </a>
+
+                </div>
+                -->
+                <!--Photography Card-->
+
+                <!--
+                <div class="row">
+                    <img style="position:relative; top: 150px" class="headshot col s3 circle offset-s5" src="Images/TakeriaBlunt.jpg">
+                </div>
+                -->
             </div>
-        </div>
 
 
-        <div class=" row  " >
-            <ul class="collapsible" >
-                <li>
-                    <div class="collapsible-header center section-headings"><b>Click to View Resumé</b></div>
-                    <div class="collapsible-body" >
-                        <div class="pink-box ">
-                            <p>&nbsp; <br>  </p>
-                        </div>
+                <div class="parallax-container " >
+                    <div class="parallax">
+                        <img src="https://images.pexels.com/photos/242236/pexels-photo-242236.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb">
+                    </div>
+                    <!--
 
-                        <div class="row">
-                            <img class="headshot materialboxed col s2 circle" src="Images/TakeriaBlunt.jpg">
-                            <h2 class="grey-text text-darken-3 lighten-3 col s4 offset-s3" style="position:relative;top:30px">Takeria Blunt </h2>
-                            <h6 class="grey-text text-darken-3 lighten-3 col s4 offset-s3" style="position:relative;top:30px">&nbsp; &nbsp; &nbsp; &nbsp;
-                                &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;   Computer Scientist </h6>
-                        </div>
-                        <div class="row" style="height:500px">
-                            <!-- education-->
-                            <div class="resume-grey col s3">
-                                <div>
-                                    <h5 style="top:10px" class="black-box center-block ">Education</h5>
-                                    <p><b style="color:dodgerblue">Spelman College</b>, Atlanta, GA &nbsp; May 2018 <br> Bachelor of Science: Computer Science <br> Cumulative GPA: 3.61/4.0
-                                    </p>
-                                    <p><b>Relevant Courses:</b> Data Structures, Algorithms, Software Engineering, <br> Programming Languages, Comp. Architecture, Databases, Operating Systems, Web Design
-                                    </p>
-                                    <h5 style="top:10px" class="black-box center-block ">Skills</h5>
-                                    <p><i>Coding:</i> Python, C++, Java, JavaScript, SQL, HTML & CSS, Web Design/Dev, Data Vis., Familiar with PHP, R, Ruby, Git <br>
-                                        <i>Tools and Environments:</i> Jupyter Platform, RStudio, QGIS, Anaconda, macOS, Windows, Linux
-                                    </p>
-                                    <div class="">
-                                        <a class="btn-floating left-align yellow">
-                                            <i onclick="closeResume()" class="large material-icons ">close</i>
-                                        </a>
+                    <div class="row">
+                        <div class=" col offset-s2">
+                            <img class="pic circle" style="z-index: 4" src="Images/blacktwitter.png">
+                            <video class="pic" width="320" height="240" autoplay>
+                                <source src="Images/blacktwitt.mov" type="video/mp4">
+                                <source src="Images/blacktwitt1.mp4" type="video/mp4">
 
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="resume-grey col s5">
-                                <div>
-                                    <h5 style="top:10px" class="black-box center-block ">Experience</h5>
-                                    <br>
-                                    <ul class="collapsible z-depth-0 " data-collapsible="accordion">
-                                        <li>
-                                            <div class="collapsible-header active"><i class="material-icons">arrow_drop_down</i>Data Science for Social Good (DSSG) Program</div>
-                                            <div class="collapsible-body">
-                                    <span>
-                                    <p><i style="color:midnightblue">Georgia Tech, Intern/Research Assistant &nbsp;&nbsp;&nbsp;&nbsp; May 2017—July 2017 </i> <br>•	Collected, analyzed, and visualized housing/parcel data by building a web application including interactive maps, virtual timelines, and other helpful tools to be used by Atlanta Legal Aid in their housing related cases.
-                                    <br>•	Used predictive models to determine the effects of rising property values and gentrification in Westside Atlanta.
-
-                                    </p>
-                                    </span>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="collapsible-header "><i class="material-icons">details</i>CURE DSI Program</div>
-                                            <div class="collapsible-body">
-                                    <span>
-                                    <p><i style="color:midnightblue">Directed Supplemental Instructor  &nbsp;&nbsp;&nbsp;&nbsp;Aug 2016—Dec 2016</i> <br>•	Aided students who face significant difficulties or want to improve their skills in the CIS 215 Data Structures course.
-                                    <br>•	Tutored and mentored students through interactive sessions and sub-lessons pulled from the CIS 215 course syllabus.
-                                    </p>
-                                    </span>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="collapsible-header"><i class="material-icons">flight_land</i>Boeing</div>
-                                            <div class="collapsible-body">
-                                    <span>
-                                    <p><i style="color:midnightblue">Systems Design & Integration Intern  &nbsp;&nbsp;&nbsp;&nbsp;May 2016—Aug 2016</i> <br>•	Produced instructional content using Camtasia Studio 8 to support the enterprise wise launch of WebEx 2.0.
-                            <br>•	Analyzed and edited enterprise websites and documentation to improve end user experience for the integration of WebEx 2.0.
-                            <br>•	Studied the software development life cycle in an Agile environment.
-                                    </p>
-                                    </span>
-                                            </div>
-                                        </li>
-                                    </ul>
-
-                                </div>
-                            </div>
-                            <div class="resume-grey col s4">
-                                <div>
-                                    <h5 style="top:10px" class="black-box center-block ">Research</h5>
-                                    <br>
-                                    <ul class="collapsible z-depth-0 " data-collapsible="accordion">
-                                        <li>
-                                            <div class="collapsible-header active"><i class="material-icons yellow-text">lightbulb_outline</i>Black Twitter: Data Analysis of Black Social Media</div>
-                                            <div class="collapsible-body">
-                                    <span>
-                                    <p><i style="color:midnightblue">Research Assistant &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jan 2016—Pres </i> <br>•	Streaming, analyzing, and visualizing data using Twitter’s API to identify trends, sentiments, and sociocultural movements sparked by the realm of “Black Twitter”.
-                                    <br>Result: Won first place for Computer Science at Spelman College Research Day 2017.
-                                    </p>
-                                    </span>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="collapsible-header"><i class="material-icons">arrow_drop_down</i>Exploring Computing Careers</div>
-                                            <div class="collapsible-body">
-                                    <span>
-                                    <p><i style="color:midnightblue">Research Assistant &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nov 2015—Aug 2016</i> <br>•	The Exploring Computing Careers project builds upon work with ECAs as mentors to undergraduates interested in attending graduate school.
-                                    <br>•	Created embodied conversational agents (ECAs) that aid in helping students learn about computing careers.
-
-                                    </p>
-                                    </span>
-                                            </div>
-                                        </li>
-
-                                    </ul>
-                                </div>
-                            </div>
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
 
                     </div>
-                </li>
-            </ul>
+                    -->
 
+                    <div class="typewriter">
 
+                        <h1 style="position: relative;z-index: 5">Projects</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col s2 offset-s4">
+                            <a href="web.html"><img style="height:150px;width:150px;position:relative;top:200px;" class="circle " src="Images/blacktwitter.png"></a>
 
-        </div>
+                        </div>
+                        <div class="col s2 ">
+                            <a href="web.html"><img style="height:150px;width:150px;position:relative;top:200px;" class="circle " src="Images/adt1.png"></a>
 
-        <div class="parallax-container" style="cursor:crosshair;overflow:scroll">
-            <div class="parallax">
-                <img src="https://images.pexels.com/photos/399161/pexels-photo-399161.jpeg?w=940&h=650&auto=compress&cs=tinysrgb">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="parallax-container " >
+                    <div class="parallax">
+                        <img src="https://images.pexels.com/photos/242236/pexels-photo-242236.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb">
+                    </div>
+                    <div class="typewriter">
+                        <h1>Design</h1>
+                    </div>
+                </div>
+
+                <div class="parallax-container " >
+                    <div class="parallax">
+                        <img src="https://images.pexels.com/photos/242236/pexels-photo-242236.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb">
+                    </div>
+                    <div class="typewriter">
+                        <h1>Video</h1>
+                    </div>
+                </div>
+
+                <div class="parallax-container " >
+                    <div class="parallax">
+                        <img src="https://images.pexels.com/photos/242236/pexels-photo-242236.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb">
+                    </div>
+                    <div class="typewriter">
+                        <h1>Photo</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col s2 offset-s4">
+                            <a href="photos.html"><img style="height:150px;width:150px;position:relative;top:200px;" class="circle " src="http://i.imgur.com/nsPndZO.jpg"></a>
+
+                        </div>
+                        <div class="col s2 ">
+                            <a href="photos.html"><img style="height:150px;width:150px;position:relative;top:200px;" class="circle " src="http://i.imgur.com/nQ2Y0eN.jpg"></a>
+
+                        </div>
+
+                    </div>
+                </div>
             </div>
-            <div class="row">
-                    <h1 class="section-headings">&nbsp;&nbsp;Gallery</h1>
+
+
+        <!--
+        <div id="photography"  class="parallax-container" style="cursor:crosshair;overflow:scroll">
+            <div class="parallax">
+                <img src="https://images.pexels.com/photos/161154/stained-glass-spiral-circle-pattern-161154.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb">
+            </div>
+            <div  class="row">
+                    <h1  class="section-headings blue lighten-3">&nbsp;&nbsp;Photography</h1>
                 <div class="col s3 white" >
 
                 </div>
             </div>
 
             <div class="grid">
-                <!--
+
                 <div class="grid-item container" >
                     <img class="materialboxed placeholder image" src="https://images.pexels.com/photos/532389/pexels-photo-532389.jpeg?w=940&h=650&auto=compress&cs=tinysrgb">
                     <div  id="materialbox-overlay" class="materialboxed placeholder " style="position:absolute">
                         <div class="text">Hello World</div>
                     </div>
                 </div>
-                -->
-                <div class="grid-item">
-                    <img class="materialboxed placeholder" data-caption="The Good Kind of Blues" src="http://i.imgur.com/nQ2Y0eN.jpg" title="source: imgur.com" />
+
+                <div class="grid-item container">
+                    <a class="" href="#cam"><img class="placeholder image" data-caption="The Good Kind of Blues" src="http://i.imgur.com/nQ2Y0eN.jpg" title="source: imgur.com" /></a>
+
+                    <div class="middle"><div class="text">Life of Cam</div></div>
                 </div>
-                <div class="grid-item">
-                    <img  class="materialboxed placeholder" data-caption="I Get It From My Mama" src="http://i.imgur.com/7xx9Yrr.jpg" title="source: imgur.com" />
+                <div class="grid-item container">
+                    <a href="#photoshop"><img class="image placeholder"   src="http://i.imgur.com/NjTp02S.jpg" title="source: imgur.com" /></a>
+                    <div class="middle"><div class="text">Photoshop + Edits</div></div>
                 </div>
+
                 <div class="grid-item">
                     <img class="materialboxed placeholder" data-caption="When You See Your Crush" src="http://i.imgur.com/zoOnGAD.jpg" title="source: imgur.com" />
                 </div>
 
-                <div class="grid-item">
-                    <img class="materialboxed placeholder" src="https://images.pexels.com/photos/532389/pexels-photo-532389.jpeg?w=940&h=650&auto=compress&cs=tinysrgb">
-                </div>
-                <div class="grid-item">
-                    <img class="materialboxed placeholder" src="https://images.pexels.com/photos/532389/pexels-photo-532389.jpeg?w=940&h=650&auto=compress&cs=tinysrgb">
-                </div>
+
+
                 <div class="grid-item">
                     <img class="materialboxed placeholder" data-caption="True To Self" src="http://i.imgur.com/nsPndZO.jpg" title="source: imgur.com" />
                 </div>
-                <div class="grid-item">
-                    <img class="materialboxed placeholder"  src="http://i.imgur.com/7WcJjHK.jpg" title="source: imgur.com" />
-                </div>
-                <div class="grid-item ">
-                    <img class="materialboxed placeholder"   src="http://i.imgur.com/NjTp02S.jpg" title="source: imgur.com" />
-                </div>
-                <div class="grid-item">
-                    <img class="materialboxed placeholder" src="http://i.imgur.com/YH97ddC.jpg" title="source: imgur.com" />
-                </div>
-                <!--
-                <div class="grid-item">
-                    <img class="materialboxed placeholder" style="width:280px" data-caption="The Eye" src="http://i.imgur.com/CyujiYq.jpg" title="source: imgur.com" />
-                </div>
-                -->
-                <div class="grid-item">
-                    <iframe class="materialboxed placeholder " src="https://giphy.com/embed/oJYoBfVKqfMcM" width="360" height="480" frameBorder="0"  ></iframe><p>
-                </div>
 
-            </div>
-            <!--
-            <div class="row">
-                <div class="col s3" style="max-height:100%; max-width:100%;object-fit: contain">
-                    <img class="materialboxed placeholder" src="https://images.pexels.com/photos/532389/pexels-photo-532389.jpeg?w=940&h=650&auto=compress&cs=tinysrgb">
-                </div>
-                <div class="col s3 offset-s1" style="max-height:100%; max-width:100%;object-fit: contain">
-                    <a href="http://imgur.com/7WcJjHK"><img class="materialboxed placeholder" target="_blank" src="http://i.imgur.com/7WcJjHK.jpg" title="source: imgur.com" /></a>
-                </div>
 
 
             </div>
-            -->
+
         </div>
 
         <div class="parallax-container">
@@ -264,24 +295,148 @@
 
                 </div>
             </div>
-            <div class="row">
 
-                <!--
-                <div class="carousel ">
-                    <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>
 
+        <div id="cam" class="modal bottom-sheet">
+            <div class="modal-content ">
+                <h4>Life of Cam</h4>
+                <p>I spend part of my free time capturing my friends' best moments, here are Cam's ✽</p>
+                <div class="row">
+                    <div class="col s3">
+                        <img class="materialboxed grid-item placeholder" data-caption="I Get It From My Mama" src="http://i.imgur.com/7xx9Yrr.jpg" title="source: imgur.com" />
+                    </div>
+                    <div class="col s3">
+                        <img class="placeholder materialboxed grid-item" data-caption="The Good Kind of Blues" src="http://i.imgur.com/nQ2Y0eN.jpg" title="source: imgur.com" />
+                    </div>
+
+                    <div class="col s3">
+                        <img class="materialboxed placeholder grid-item"  src="http://i.imgur.com/7WcJjHK.jpg" title="source: imgur.com" />
+                    </div>
                 </div>
-                -->
-                <!-- <div class="col s3 offset-s1 pink-box placeholder">
-
-                </div>
-                <div class="col s3 offset-s1 pink-box placeholder">
-
-                </div>
-                -->
-
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cam</a>
             </div>
         </div>
+
+
+        <div id="photoshop" class="modal bottom-sheet">
+            <div class="modal-content ">
+                <h4>Photoshop + Edits</h4>
+                <p>Playing around with backgrounds and layers in photoshop, view the before and after ✂</p>
+                <div class="row">
+                    <div class="col s3">
+                        <img class="materialboxed placeholder grid-item" src="http://i.imgur.com/YH97ddC.jpg" title="source: imgur.com" />
+                    </div>
+                    <div class="col s3">
+                        <img class="materialboxed placeholder grid-item"   src="http://i.imgur.com/NjTp02S.jpg" title="source: imgur.com" />
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cam</a>
+            </div>
+        </div>
+        -->
+        <div id="resumemodal" class="modal">
+            <div class="modal-content">
+                <div class="row" style="height:500px">
+
+                    <div class="resume-grey col s3">
+                        <div>
+                            <h5 style="top:10px" class="black-box center-block ">Education</h5>
+                            <p><b style="color:dodgerblue">Spelman College</b>, Atlanta, GA &nbsp; May 2018 <br> Bachelor of Science: Computer Science <br> Cumulative GPA: 3.61/4.0
+                            </p>
+                            <p><b>Relevant Courses:</b> Data Structures, Algorithms, Software Engineering, <br> Programming Languages, Comp. Architecture, Databases, Operating Systems, Web Design
+                            </p>
+                            <h5 style="top:10px" class="black-box center-block ">Skills</h5>
+                            <p><i>Coding:</i> Python, C++, Java, JavaScript, SQL, HTML & CSS, Web Design/Dev, Data Vis., Familiar with PHP, R, Ruby, Git <br>
+                                <i>Tools and Environments:</i> Jupyter Platform, RStudio, QGIS, Anaconda, macOS, Windows, Linux
+                            </p>
+                            <div class="">
+                                <a class="btn-floating left-align yellow">
+                                    <i onclick="closeResume()" class="large material-icons ">close</i>
+                                </a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="resume-grey col s5">
+                        <div>
+                            <h5 style="top:10px" class="black-box center-block ">Experience</h5>
+                            <br>
+                            <ul class="collapsible z-depth-0 " data-collapsible="accordion">
+                                <li>
+                                    <div class="collapsible-header active"><i class="material-icons">arrow_drop_down</i>Data Science for Social Good (DSSG) Program</div>
+                                    <div class="collapsible-body">
+                                    <span>
+                                    <p><i style="color:midnightblue">Georgia Tech, Intern/Research Assistant &nbsp;&nbsp;&nbsp;&nbsp; May 2017—July 2017 </i> <br>•	Collected, analyzed, and visualized housing/parcel data by building a web application including interactive maps, virtual timelines, and other helpful tools to be used by Atlanta Legal Aid in their housing related cases.
+                                    <br>•	Used predictive models to determine the effects of rising property values and gentrification in Westside Atlanta.
+
+                                    </p>
+                                    </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header "><i class="material-icons">details</i>CURE DSI Program</div>
+                                    <div class="collapsible-body">
+                                    <span>
+                                    <p><i style="color:midnightblue">Directed Supplemental Instructor  &nbsp;&nbsp;&nbsp;&nbsp;Aug 2016—Dec 2016</i> <br>•	Aided students who face significant difficulties or want to improve their skills in the CIS 215 Data Structures course.
+                                    <br>•	Tutored and mentored students through interactive sessions and sub-lessons pulled from the CIS 215 course syllabus.
+                                    </p>
+                                    </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">flight_land</i>Boeing</div>
+                                    <div class="collapsible-body">
+                                    <span>
+                                    <p><i style="color:midnightblue">Systems Design & Integration Intern  &nbsp;&nbsp;&nbsp;&nbsp;May 2016—Aug 2016</i> <br>•	Produced instructional content using Camtasia Studio 8 to support the enterprise wise launch of WebEx 2.0.
+                            <br>•	Analyzed and edited enterprise websites and documentation to improve end user experience for the integration of WebEx 2.0.
+                            <br>•	Studied the software development life cycle in an Agile environment.
+                                    </p>
+                                    </span>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="resume-grey col s4">
+                        <div>
+                            <h5 style="top:10px" class="black-box center-block ">Research</h5>
+                            <br>
+                            <ul class="collapsible z-depth-0 " data-collapsible="accordion">
+                                <li>
+                                    <div class="collapsible-header active"><i class="material-icons yellow-text">lightbulb_outline</i>Black Twitter: Data Analysis of Black Social Media</div>
+                                    <div class="collapsible-body">
+                                    <span>
+                                    <p><i style="color:midnightblue">Research Assistant &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jan 2016—Pres </i> <br>•	Streaming, analyzing, and visualizing data using Twitter’s API to identify trends, sentiments, and sociocultural movements sparked by the realm of “Black Twitter”.
+                                    <br>Result: Won first place for Computer Science at Spelman College Research Day 2017.
+                                    </p>
+                                    </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">arrow_drop_down</i>Exploring Computing Careers</div>
+                                    <div class="collapsible-body">
+                                    <span>
+                                    <p><i style="color:midnightblue">Research Assistant &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nov 2015—Aug 2016</i> <br>•	The Exploring Computing Careers project builds upon work with ECAs as mentors to undergraduates interested in attending graduate school.
+                                    <br>•	Created embodied conversational agents (ECAs) that aid in helping students learn about computing careers.
+
+                                    </p>
+                                    </span>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
     </main>
 
@@ -299,7 +454,10 @@
         $(document).ready(function(){
             (function($){
                 $(function(){
+                    //$(".aboutme").hide();
+                    $('.aboutme').hide().fadeIn(30000);
                     $('.parallax').parallax();
+                    $('.modal').modal();
                     $('.slider').slider();
                     $('.collapsible').collapsible();
                     $('.carousel').carousel();
@@ -313,7 +471,22 @@
             })(jQuery);
         });
         function closeResume(){
-            $('.collapsible').collapsible('close', 0)
+            $('#resumemodal').modal('close', 0)
+        }
+        function photography(){
+            location.href="photos.html";
+        }
+        function home(){
+            location.href="index.html";
+        }
+        function graphic(){
+            location.href="graphics.html";
+        }
+        function videos(){
+            location.href="video.html";
+        }
+        function webDev(){
+            location.href="web.html";
         }
     </script>
 </body>
